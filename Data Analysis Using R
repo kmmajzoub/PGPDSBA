@@ -1,0 +1,60 @@
+x <- 6
+y <- "Hello"
+z <- 'World'
+z
+Z <- 8
+a <- x+Z
+a
+b <- x+y
+
+### Data Types
+
+## numeric 
+class(a)
+class(y)
+
+### boolean
+b <- TRUE
+class(b)
+
+####character
+class(y)
+######################## Data Structure ################
+## vectors
+my_vector <- c(14,26,38,30)
+my_vector2 <- c("Hello", "Good Morning","Nice to Meet u", "Me too" )
+my_vector3 <- c(10,20,"hello")
+class(my_vector3)
+my_vector[3]
+### matrices
+
+my_matrix <- matrix(my_vector,nrow = 2,ncol = 2)
+my_matrix
+1:9
+my_matrix2 <- matrix(1:9,nrow = 3,ncol = 3)
+my_matrix2
+my_matrix2[2,2]
+my_matrix2[2,]
+my_matrix2[,2]
+my_matrix2[1:2,1:2]
+my_matrix2[-3,-3]
+
+### data frames
+my_dataframe <- data.frame(my_vector,my_vector2)
+my_dataframe
+class(my_dataframe)
+class(my_dataframe$my_vector)
+class(my_dataframe$my_vector2)
+my_dataframe$my_vector
+my_dataframe[,1]
+my_dataframe[1:3,]
+my_little_data_frame <-  my_dataframe[1:3,]
+
+### lists
+
+my_list <- list(my_vector,my_matrix,my_dataframe,my_vector2)
+my_list
+class(my_list)
+my_list[[3]]
+my_list[[3]][1,]
+######################## importing data and packages
